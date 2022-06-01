@@ -45,7 +45,7 @@ body {
   text-transform: uppercase;
 }
 
-.create-auditorium-form {
+.log-in-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@ body {
   color: #fff;
   text-align: center;
 }
-.create-auditorium-form input, .create-auditorium-form select, .create-auditorium-form button {
+.log-in-form input, .log-in-form button {
   border-color: lightgray;
   border-width: 2px;
   color: #fff;
@@ -78,7 +78,7 @@ body {
   margin-top: 20px;
   margin-left: 10px;
 }
-.create-auditorium-form small, .create-auditorium-form label {
+.log-in-form small, .log-in-form label {
   margin-bottom: -20px;
   color: lightblue;
   border-radius: 0.375rem;
@@ -92,4 +92,4 @@ body {
   margin-top: 20px;
 }
 
-/*# sourceMappingURL=reserve-auditorium.css.map */
+/*# sourceMappingURL=sign-up.css.map */
