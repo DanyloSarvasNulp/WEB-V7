@@ -1,2 +1,2 @@
 # WEB-V7
-Labs for the web technology subject.
+With JetBrain's Webstorm scss is automatically compiled into css, if you're using other IDE write *npm run sass*
