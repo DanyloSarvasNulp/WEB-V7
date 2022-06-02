@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reserve-auditorium.css">
+</head>
+<body>
+
+<div class="navigation-bar">
+    <ul>
+        <li class="title"><h1 class="list-title">Reserve Auditorium</h1></li>
+
+        <li class="link"><a href="../log-in/log-in.html">Log in</a></li>
+        <li class="link"><a href="../sigh-up/sign-up.html">Sign up</a></li>
+        <li class="link"><a href="../reserve-auditorium/reserve-auditorium.html">Make Reservation</a></li>
+        <li class="link"><a href="../reservations/reservations.html">Current Reservations</a></li>
+    </ul>
+</div>
+
+<div class="create-reservation">
+    <form class="create-auditorium-form">
+        <label for="auditoriums">Choose an auditorium:</label>
+        <select name="auditoriums" id="auditoriums" required>
+            <option value="auditorium1">Auditorium №1</option>
+            <option value="auditorium2">Auditorium №2</option>
+            <option value="auditorium3">Auditorium №3</option>
+            <option value="auditorium4">Auditorium №4</option>
+            <option value="auditorium5">Auditorium №5</option>
+        </select>
+        <small>Reserve from</small>
+        <input type="time" name="appt" min="09:00" max="18:00" required/>
+        <small>Reserve to</small>
+        <input type="time" name="appt" min="09:00" max="18:00" required/>
+        <small>Reservation purposer</small>
+        <input type="text"/>
+        <button>Finish</button>
+    </form>
+</div>
+</body>
+</html>
+
