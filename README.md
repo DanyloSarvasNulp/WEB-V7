@@ -1,2 +1,2 @@
 # WEB-V7
-Labs for the web technology subject.
+open package.json file and run first and second script
