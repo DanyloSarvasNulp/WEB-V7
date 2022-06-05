@@ -1,0 +1,27 @@
+*{
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+th{
+    height: 50px;
+}
+td{
+    width: 25%;
+}
+td, th {
+    border: 3px solid aliceblue;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: darkslategray;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    max-width: 90%;
+}
