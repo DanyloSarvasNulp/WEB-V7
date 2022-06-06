@@ -32,7 +32,7 @@ class Dao {
 
     getUserByUsername = username => this.ifConnected(db => db.collection('user').findOne({username: username}))
 
-    updateUser = (username, fieldToUpdate) => this.ifConnected(db => db.collection('user').updateOne({username},
+    updateUser = (username, fieldToUpdate) => this.ifConnected(db => db.collection('user').updateOne(this.getUserByUsername(username),
         {$set: fieldToUpdate}
     ))
 

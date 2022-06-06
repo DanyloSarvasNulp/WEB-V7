@@ -4,6 +4,9 @@ const {expressjwt: jwt} = require("express-jwt");
 const bcrypt = require('bcrypt')
 const jsonwebtoken = require('jsonwebtoken')
 
+const cors = require('cors');
+
+
 const saltRounds = 10
 const secret = "secret"
 
@@ -11,7 +14,7 @@ const userRole = "user"
 const adminRole = "admin"
 
 const app = express()
-
+app.use(cors());
 app.use(express.json())
 
 // User Curls
@@ -56,10 +59,10 @@ app.get('/users',
 app.put('/user',
     jwt({secret: secret, algorithms: ["HS256"]}),
     (req, res) => {
-        Dao.updateUser(req.query.username, {
-            firstName: req.body.firstName,
-            lastName: req.body.lastName
-        })
+        Dao.updateUser(req.query.username,
+            {
+            username: req.body.username,
+                        })
             .then(_ => res.sendStatus(200))
             .catch(err => console.error(err))
     }
@@ -150,4 +153,4 @@ app.put('/reservation',
             .catch(err => console.error(err))
     })
 
-app.listen(3000, () => console.log("Start..."))
+app.listen(8000, () => console.log("Start..."))
