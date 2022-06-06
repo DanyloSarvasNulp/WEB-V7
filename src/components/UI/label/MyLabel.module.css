@@ -1,0 +1,16 @@
+label{
+    width: 100%;
+    border-color: lightgray;
+    border-width: 2px;
+    color: #fff;
+    border-radius: .375rem;
+    border: 1px solid #cad1d7;
+    background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}

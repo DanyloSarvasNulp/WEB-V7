@@ -4,7 +4,7 @@ import '../styles/styles.css'
 const Signup = () => {
     return (
         <div className="body">
-            Ho
+
         </div>
     );
 }

@@ -67,7 +67,7 @@ const Signup = () => {
                     required
                 />
                 <MyButton onClick={sendSignupRequest}>Sign-up</MyButton>
-                <Link className="navigation-btn" to="/login">H</Link>
+                <MyButton><Link className="navigation-btn" to="/login">Have an account? Log in</Link></MyButton>
             </form>
         </div>
     );

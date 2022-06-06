@@ -10,6 +10,16 @@ const Navbar = () => {
     return (
         <div className="navigation-bar">
             <ul className="navigation-bar-list">
+                <li className="navigation-bar-list-member">
+                    <Link className="navigation-btn" to="/reservations">Reservations</Link>
+                </li>
+                {
+                    role === 'admin' ?
+                        <li className="navigation-bar-list-member">
+                            <Link className="navigation-btn" to="/users">Users</Link>
+                        </li>
+                        : <div/>
+                }
                 {
                     jwt === '' ? <li className="navigation-bar-list-member">
                         <Link className="navigation-btn" to="/signup">Sign up</Link>
@@ -20,17 +30,6 @@ const Navbar = () => {
                         <Link className="navigation-btn" to="/user">Profile</Link>
                     </li> : <li/>
                 }
-                {
-                    role === 'admin' ?
-                        <li className="navigation-bar-list-member">
-                            <Link className="navigation-btn" to="/users">Users</Link>
-                        </li>
-                        : <div/>
-                }
-
-                <li className="navigation-bar-list-member">
-                    <Link className="navigation-btn" to="/reservations">Reservations</Link>
-                </li>
             </ul>
         </div>
     );
