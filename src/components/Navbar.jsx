@@ -12,7 +12,7 @@ const Navbar = () => {
                         <li className="navigation-bar-list-member">
                             <Link className="navigation-btn" to="/reservations">Reservations</Link>
                         </li>
-                }
+
                 {
                     jwt === '' ? <li className="navigation-bar-list-member">
                         <Link className="navigation-btn" to="/signup">Sign up</Link>
