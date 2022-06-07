@@ -59,7 +59,7 @@ const Login = () => {
                     required
                 />
                 <MyButton onClick={sendLoginRequest}>Login</MyButton>
-                <MyButton><Link className="navigation-btn" to="/login">Don't have an account? Log in</Link></MyButton>
+                <MyButton><Link className="navigation-btn" to="/signup">Don't have an account? Sign up</Link></MyButton>
             </form>
         </div>
     );

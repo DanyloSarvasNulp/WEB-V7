@@ -22,7 +22,7 @@ const User = () => {
 
     const deleteUser = (e) => {
         e.preventDefault()
-        API.sendDeleteUserRequest(jwt, username)
+        API.sendDeleteUserRequest(username)
             .then(_ => {
                 navigate('/login')
             })
